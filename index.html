@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Instagram</title>
+    <style>
+      .custom-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover; 
+      }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+  <ul class="nav bg-light">
+    <li class="nav-item">
+      <a class="nav-link active" style="width: 650px; color: black;" aria-current="page" href="#"><div class="fs-4"><i class="fa-brands fa-instagram"></i> <span class="fs-4">Instagram</span></a>
+    </li>
+    <li class="nav-item ms-auto pt-2">
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Create a new post
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Caption:
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" ></textarea>
+                <label for="floatingTextarea" class="text-secondary">Add the caption of your post here</label>
+              </div>
+              <div class="pt-2">
+                <button type="button" class="btn btn-secondary"><i class="fa-solid fa-camera"></i></button>
+                <button type="button" class="btn btn-secondary"><i class="fa-solid fa-location-pin"></i></button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item ps-2 pt-2">
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i> 
+        </button>
+        <ul class="dropdown-menu dropdown-menu-lg-end">
+          <li><a class="dropdown-item" href="#">Publish</a></li>
+          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+        </ul>
+      </div>
+    </li>
+  
+  </ul>
+
+  <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+    </li>
+    
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <div class="container-fluid m-0 pb-0">
+        <div class="row">
+          <div class="col-4 p-4">
+            <img src=".vscode/benjamin-chambon-H7w7PWi2__I-unsplash.jpg" class="custom-image img-fluid " alt="">
+          </div>
+          <div class="col-4 p-4">
+            <img src=".vscode/benjamin-chambon-N1eMyROfqHk-unsplash.jpg" class="custom-image img-fluid " alt="">
+          </div>
+          <div class="col-4 p-4">
+            <img src=".vscode/bharath-kumar-Zxg42d-WIZM-unsplash.jpg" class="custom-image img-fluid " alt="">
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-4 p-4">
+              <img src=".vscode/francesco-ungaro-BYcr3ER_Q3k-unsplash.jpg" class="custom-image img-fluid " alt="">
+            </div>
+            <div class="col-4 p-4">
+              <img src=".vscode/hong-zhao-eGnfcEfkP04-unsplash.jpg" class="custom-image img-fluid " alt="">
+            </div>
+            <div class="col-4 p-4">
+              <img src=".vscode/nathan-queloz-FZ3wOVYg9bw-unsplash.jpg" class="custom-image img-fluid " alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 p-4">
+              <img src=".vscode/annie-spratt-sQ0_mim9-LU-unsplash.jpg" class="custom-image img-fluid " alt="">
+            </div>
+            <div class="col-4 p-4">
+              <img src=".vscode/victor-hugo-fL-Kg0UIAjo-unsplash.jpg" class="custom-image img-fluid " alt="">
+            </div>
+            <div class="col-4 p-4">
+              <img src=".vscode/zoshua-colah-hMNJMDkaUdI-unsplash.jpg" class="custom-image img-fluid " alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="tab-pane fade border-0 justify-content-center" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <div class="container  d-flex justify-content-center align-items-center mb-4 mt-4">
+        <div class="card">
+          <div class="card-header d-flex">
+            <span class="fs-5">Beach in black and white</span>
+            <span class="ms-auto text-secondary">18/26</span>
+          </div>
+          <img src=".vscode/annie-spratt-sQ0_mim9-LU-unsplash.jpg" class="card-img-top img-fluid" style="height: 600px;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">204 Likes</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+          </div>
+        </div>
+      </div> 
+      <div class="container  d-flex justify-content-center align-items-center mb-4">
+        <div class="card">
+          <div class="card-header d-flex">
+            <span class="fs-5">Rome</span>
+            <span class="ms-auto text-secondary">18/26</span>
+          </div>
+          <img src=".vscode/victor-hugo-fL-Kg0UIAjo-unsplash.jpg" class="card-img-top img-fluid" style="height: 600px;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">204 Likes</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+          </div>
+        </div>
+      </div> 
+      <div class="container  d-flex justify-content-center align-items-center mb-4">
+        <div class="card">
+          <div class="card-header d-flex">
+            <span class="fs-5">Alpes</span>
+            <span class="ms-auto text-secondary">18/26</span>
+          </div>
+          <img src=".vscode/zoshua-colah-hMNJMDkaUdI-unsplash.jpg" class="card-img-top img-fluid" style="height: 600px;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">204 Likes</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+          </div>
+        </div>
+      </div> 
+    </div>
+   
+  </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+</body>
+</html>
